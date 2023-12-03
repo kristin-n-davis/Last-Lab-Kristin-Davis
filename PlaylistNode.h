@@ -9,4 +9,16 @@ private:
    string artistName;
    int songLength;
    PlaylistNode* nextNodePtr;
+ public:
+   PlaylistNode();
+   PlaylistNode(string songID, string songsName, string songArtistName, int songsLength);
+   string GetID();
+   string GetSongName();
+   string GetArtistName();
+   int GetSongLength();
+   PlaylistNode* GetNext();
+   
+   void InsertAfter(PlaylistNode* nodePtr);
+   void SetNext(PlaylistNode* nodePtr);
+   void PrintPlaylistNode();
 }
