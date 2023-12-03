@@ -127,4 +127,6 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
       
       }
    }
+    else if(option == 'q'){
+   }
 }
