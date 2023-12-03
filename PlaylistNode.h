@@ -21,4 +21,4 @@ private:
    void InsertAfter(PlaylistNode* nodePtr);
    void SetNext(PlaylistNode* nodePtr);
    void PrintPlaylistNode();
-}
+};
