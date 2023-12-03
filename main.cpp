@@ -14,3 +14,5 @@ void PrintMenu(const string playlistTitle) {
    
    
 }
+PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headNode) {
+}
