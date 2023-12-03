@@ -22,3 +22,6 @@ string PlaylistNode::GetSongName(){
 string PlaylistNode::GetArtistName(){
    return artistName;
 }
+int PlaylistNode::GetSongLength(){
+   return songLength;
+}
