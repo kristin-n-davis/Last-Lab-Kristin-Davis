@@ -132,5 +132,9 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
    return headNode; 
 }
 int main() {
+   string playlistTitle;
+   cout << "Enter playlist's title:" << endl;
+   cout << endl;
+   getline(cin, playlistTitle);
    return 0;
 }
