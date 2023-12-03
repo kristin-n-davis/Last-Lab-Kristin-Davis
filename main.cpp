@@ -73,4 +73,25 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
    }
    else if(option == 'c'){
    }
+    else if(option == 's'){
+    cout << "OUTPUT SONGS BY SPECIFIC ARTIST" << endl;
+   cout << "Enter artist's name:" << endl;
+   cout << endl;
+   string artistName;
+   getline(cin, artistName);
+   int position = 1;
+  
+   
+   PlaylistNode* currentNode = headNode;
+   
+   while(currentNode != nullptr){
+      if(currentNode->GetArtistName() == artistName){
+         cout << position << "." << endl;
+         currentNode ->PrintPlaylistNode();
+         cout << endl;
+      }
+      currentNode = currentNode->GetNext();
+      position = position +1;
+   }
+   }
 }
