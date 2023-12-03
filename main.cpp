@@ -140,6 +140,14 @@ int main() {
    PlaylistNode* headNode = nullptr;
    
    char option = ' ';
-   
+
+    while(option != 'q'){
+      PrintMenu(playlistTitle);
+      cout << "Choose an option:" << endl;
+      cin >> option;
+      cin.ignore();
+      headNode = ExecuteMenu(option, playlistTitle, headNode);
+   }
+
    return 0;
 }
