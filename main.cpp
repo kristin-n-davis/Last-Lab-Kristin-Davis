@@ -94,4 +94,18 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
       position = position +1;
    }
    }
+    else if(option == 't'){
+      cout <<  "OUTPUT TOTAL TIME OF PLAYLIST (IN SECONDS)" << endl;
+      int times;
+      times = 0;
+      PlaylistNode* currentNode = headNode;
+      
+      while (currentNode != nullptr){
+         times = times + currentNode->GetSongLength();
+         currentNode = currentNode->GetNext();
+      }
+      
+     cout << "Total time: " << times << " seconds" << endl;
+     cout << endl;
+   }
 }
