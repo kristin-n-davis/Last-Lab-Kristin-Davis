@@ -131,3 +131,6 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
    }
    return headNode; 
 }
+int main() {
+   return 0;
+}
