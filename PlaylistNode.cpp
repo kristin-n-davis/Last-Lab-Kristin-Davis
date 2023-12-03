@@ -13,3 +13,6 @@ PlaylistNode::PlaylistNode(string songID, string songsName, string songArtist, i
    songLength = songsLength;
    nextNodePtr = nullptr;
 }
+string PlaylistNode::GetID(){
+   return uniqueID;
+}
