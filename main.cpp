@@ -71,4 +71,6 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
       cout << "\"" << currentNode -> GetSongName() << "\" removed." << endl; 
       cout << endl;
    }
+   else if(option == 'c'){
+   }
 }
