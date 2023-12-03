@@ -16,3 +16,6 @@ PlaylistNode::PlaylistNode(string songID, string songsName, string songArtist, i
 string PlaylistNode::GetID(){
    return uniqueID;
 }
+string PlaylistNode::GetSongName(){
+   return songName;
+}
