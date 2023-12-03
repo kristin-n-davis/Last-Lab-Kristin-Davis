@@ -19,3 +19,6 @@ string PlaylistNode::GetID(){
 string PlaylistNode::GetSongName(){
    return songName;
 }
+string PlaylistNode::GetArtistName(){
+   return artistName;
+}
