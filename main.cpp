@@ -136,5 +136,10 @@ int main() {
    cout << "Enter playlist's title:" << endl;
    cout << endl;
    getline(cin, playlistTitle);
+
+   PlaylistNode* headNode = nullptr;
+   
+   char option = ' ';
+   
    return 0;
 }
