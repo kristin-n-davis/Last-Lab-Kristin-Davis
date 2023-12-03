@@ -28,3 +28,8 @@ int PlaylistNode::GetSongLength(){
 PlaylistNode* PlaylistNode::GetNext(){
    return nextNodePtr;
 }
+void PlaylistNode::InsertAfter(PlaylistNode* nodePtr){
+   PlaylistNode* tempNext = nextNodePtr;
+   nextNodePtr = nodePtr;
+   nodePtr->nextNodePtr = tempNext;
+}
