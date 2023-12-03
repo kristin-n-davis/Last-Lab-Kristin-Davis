@@ -33,3 +33,6 @@ void PlaylistNode::InsertAfter(PlaylistNode* nodePtr){
    nextNodePtr = nodePtr;
    nodePtr->nextNodePtr = tempNext;
 }
+void PlaylistNode::SetNext(PlaylistNode* nodePtr){
+   nextNodePtr = nodePtr;
+}
