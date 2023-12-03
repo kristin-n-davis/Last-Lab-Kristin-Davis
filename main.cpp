@@ -48,4 +48,27 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
             currentNode -> InsertAfter(newNode);
          }
    }
+   else if(option == 'd'){
+      cout << "REMOVE SONG" << endl;
+      string idgone;
+      cout << "Enter song's unique ID:" << endl;
+      cin >> idgone;
+      PlaylistNode* currentNode = headNode;
+      PlaylistNode* lastNode = nullptr;
+      
+      while (currentNode != nullptr && currentNode ->GetID() != idgone){
+         lastNode = currentNode;
+         currentNode = currentNode->GetNext();
+      }
+      
+         if(lastNode == nullptr){
+            headNode = currentNode->GetNext();
+         }
+         else{
+            lastNode -> SetNext(currentNode->GetNext());
+         }
+         
+      cout << "\"" << currentNode -> GetSongName() << "\" removed." << endl; 
+      cout << endl;
+   }
 }
