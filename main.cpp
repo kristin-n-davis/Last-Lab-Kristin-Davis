@@ -108,4 +108,23 @@ PlaylistNode* ExecuteMenu(char option, string playlistTitle, PlaylistNode* headN
      cout << "Total time: " << times << " seconds" << endl;
      cout << endl;
    }
+   else if(option == 'o'){
+      cout << playlistTitle << " - OUTPUT FULL PLAYLIST" << endl;
+      int position = 1;
+      
+      PlaylistNode* currentNode = headNode;
+      
+      while(currentNode != nullptr){
+         cout << position << "." << endl;
+         currentNode -> PrintPlaylistNode();
+         cout << endl;
+         currentNode = currentNode->GetNext();
+         position = position + 1;
+      }
+      if(position == 1){
+         cout << "Playlist is empty" << endl;
+         cout << endl;
+      
+      }
+   }
 }
